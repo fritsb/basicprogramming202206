@@ -6,7 +6,7 @@ public class FileManager {
 
     // Voorbeeld van methode die zonder een object gegevens wegschrijft
     public static void writeInfo( String info, int data ) {
-        File dataFile = new File("data.txt");
+        File dataFile = new File("data.txt"); // Vervang "data.txt" eventueel door "document.decrypted"
         try {
             FileWriter fw = new FileWriter(dataFile, true);
             BufferedWriter printer = new BufferedWriter(fw);
@@ -28,7 +28,7 @@ public class FileManager {
 
     // Voorbeeld van een methode die een object wegschrijft naar een tekst-bestand.
     public static void writeArtist( Artist newArtist ) {
-        File dataFile = new File("data.txt");
+        File dataFile = new File("data.txt");  // Vervang "data.txt" eventueel door "document.decrypted"
         try {
             FileWriter fw = new FileWriter(dataFile, true);
             BufferedWriter printer = new BufferedWriter(fw);
